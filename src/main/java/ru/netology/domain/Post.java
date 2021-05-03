@@ -1,25 +1,33 @@
 package ru.netology.domain;
 
 public class Post {
-   private int id;
-   private String text;
-   private int postId;
-   private int ownerId;
-   private int ownerSpaceUserId;
-   private int wroteUserId;
-   private int date;
-   private boolean canEdit;
-   private boolean canDelete;
-   private LikesInfo likesInfo;
-   private CommentsInfo commentsInfo;
-   private Repostinfo repostinfo;
-   private ViewsInfo viewsInfo;
+    private int id;
+    private String text;
+    private int postId;
+    private int ownerId;
+    private int ownerSpaceUserId;
+    private int wroteUserId;
+    private int date;
 
-   public int getId() {
-      return id;
-   }
+    private int createdBy;
+    private int replyOwnerId;
+    private int replyPostId;
+    private int friendsOnly;
+    private boolean canEdit;
+    private boolean canDelete;
+    private boolean canPin;
+    private boolean IsPinned;
 
-   public void setId(int id) {
+    private LikesInfo likesInfo;
+    private CommentsInfo commentsInfo;
+    private Repostinfo repostinfo;
+    private ViewsInfo viewsInfo;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
       this.id = id;
    }
 
